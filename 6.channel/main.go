@@ -8,10 +8,10 @@ func main() {
 	ch := make(chan string)
 
 	go func() {
-		ch <- "hello"
+		ch <- "hello" // pour into channel
 	}()
 
-	message := <-ch
+	message := <-ch // drink out of channel
 	fmt.Println(message)
 
 }

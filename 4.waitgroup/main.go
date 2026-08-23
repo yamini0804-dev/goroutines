@@ -8,7 +8,7 @@ import (
 
 func main() {
 	var wg sync.WaitGroup
-	wg.Add(2)
+	wg.Add(0)
 	go prinstmsg(&wg)
 	go printnums(&wg)
 	wg.Wait()

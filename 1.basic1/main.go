@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main1() {
 	go printnumbers()
 	go printchars()
 	time.Sleep(3 * time.Second)
